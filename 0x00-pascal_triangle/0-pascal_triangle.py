@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-"""pascal-triangle"""
+"""
+    pascal-triangle
+"""
 from math import factorial
 
 
 def pascal_triangle(n):
+    """
+        pascal-triangle
+    """
     _pascal = []
     if n <= 0:
         return []
