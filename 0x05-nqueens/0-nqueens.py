@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """N queens"""
 
-import sys
-
 
 def nQueens(n: int, i, a, b, c):
     """N queens puzzle"""
@@ -15,6 +13,8 @@ def nQueens(n: int, i, a, b, c):
 
 
 if __name__ == "__main__":
+    import sys
+
     args = sys.argv
     if len(args) != 2:
         print("Usage: nqueens N")
