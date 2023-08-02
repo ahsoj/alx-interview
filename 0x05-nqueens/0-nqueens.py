@@ -2,7 +2,7 @@
 """N queens"""
 
 
-def nQueens(n: int, i, a, b, c):
+def nQueens(n: int, i=0, a=[], b=[], c=[]):
     """N queens puzzle"""
     if i < n:
         for j in range(n):
@@ -26,5 +26,5 @@ if __name__ == "__main__":
         print("N must be at least 4")
         exit(1)
     else:
-        for solution in nQueens(int(args[1]), 0, [], [], []):
+        for solution in nQueens(int(args[1]), 0):
             print([[idx, sol] for idx, sol in enumerate(solution)])
