@@ -7,7 +7,7 @@ const filmId = process.argv[2];
 request(`${endpoint}/films/${filmId}/`, async (error, _res, body) => {
   if (error) return console.log(error);
 
-  const characters = JSON.parse(body).characters;
+  const characters = await JSON.parse(body).characters;
 
   for (const character of characters) {
     await new Promise((resolve, reject) => {
