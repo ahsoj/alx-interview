@@ -4,7 +4,7 @@
 from typing import List
 
 
-def island_perimter(grid: List[List[int]]):
+def island_perimeter(grid: List[List[int]]) -> int:
     """returns the perimter of the island described in `grid`
     0: represents water
     1: represents land
